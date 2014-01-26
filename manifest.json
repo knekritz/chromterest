@@ -1,0 +1,11 @@
+{
+  "name" : "Chromterest",
+  "version" : "1.0",
+  "description" : "Pinterest",
+  "content_scripts": [ {
+    "js": [ "jquery-1.11.0.min.js", "contentscript.js" ],
+    "css": ["customStyles.css"],
+    "matches": [ "http://*/*", "https://*/*"]
+  }],
+  "manifest_version": 2
+}

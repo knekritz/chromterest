@@ -81,6 +81,7 @@ $.get( theurl, function( data ) {
             if (list[i].length > 3) {
                 foundword = 1;
                 query = list[i];
+                
                 break;
             }
             

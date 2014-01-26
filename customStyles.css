@@ -20,6 +20,7 @@
 	top: 50%;
     margin-top: -25px;
 	z-index: 9999999999999;
+
 }
 
 #chrome_pin_ext_panel::-webkit-scrollbar {

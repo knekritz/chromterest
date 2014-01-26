@@ -8,5 +8,5 @@
     "css": ["customStyles.css"],
     "matches": [ "http://*/*", "https://*/*"]
   }],
-  "manifest_version": 2
+  "manifest_version": 0.1
 }

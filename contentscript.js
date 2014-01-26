@@ -4,7 +4,7 @@ $('body').append('<div class="chrome_pin_ext_panel">Pinterest!!!</div>').append(
 $(function(){
 	$('.chrome_pin_ext_slider').hover(function(){
         if($(this).hasClass('show')){
-	    $( ".slider-arrow, .panel" ).animate({
+	    $( ".chrome_pin_ext_slider, .chrome_pin_ext_panel" ).animate({
           right: "+=120"
 		  }, 700, function() {
             // Animation complete.
@@ -14,7 +14,7 @@ $(function(){
     });
     $('.chrome_pin_ext_slider').click(function(){
         if($(this).hasClass('hide')){	
-	    $( ".slider-arrow, .panel" ).animate({
+	    $( ".chrome_pin_ext_slider, .chrome_pin_ext_panel" ).animate({
           right: "-=120"
 		  }, 700, function() {
             // Animation complete.

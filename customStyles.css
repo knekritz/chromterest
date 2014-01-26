@@ -11,8 +11,8 @@
 .chrome_pin_ext_slider {
 	padding:5px;
 	width:20px;
-	float:right;
 	background:#d9dada;
 	position:fixed;
-	right:-120px;
+	right:0px;
+	top: 100px;
 }

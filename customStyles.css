@@ -6,6 +6,7 @@
 	right:-120px;
 	top:0px;
 	overflow: hidden;
+	z-index: 9999999999999;
 
 }
 .chrome_pin_ext_slider {
@@ -15,4 +16,5 @@
 	position:fixed;
 	right:0px;
 	top: 100px;
+	z-index: 9999999999999;
 }

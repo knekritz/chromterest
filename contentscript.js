@@ -60,9 +60,8 @@ function func(){
     }
     
     
-    
 
-var theurl =  "https://api.pinterest.com/v3/search/pins/?page_size=50&query=" + query+"&access_token=MTQzNTc3NDo0NTA1NzEyNzUxMjgwMTkxMjE6MnwxMzkwNjgwMDYxOjAtLWQ3YzI5NzNiMDJlMGU1YzYxZmY5NjMxNWFmOGZhOGNkY2E2NDU3ZmU=";
+var theurl =  "https://api.pinterest.com/v3/search/pins/?page_size=100&query=" + query+"&access_token=MTQzNTc3NDo0NTA1NzEyNzUxMjgwMTkxMjE6MnwxMzkwNjgwMDYxOjAtLWQ3YzI5NzNiMDJlMGU1YzYxZmY5NjMxNWFmOGZhOGNkY2E2NDU3ZmU=";
     var found = 0;
 
 $.get( theurl, function( data ) {
@@ -77,7 +76,7 @@ $.get( theurl, function( data ) {
     
     if (!found){
         var foundword = 0;
-        var list = query.split(" ");
+        var list = query.split(/\s+/);
         for (i=0; i<list.length;i++) {
             if (list[i].length > 3) {
                 foundword = 1;
@@ -87,6 +86,7 @@ $.get( theurl, function( data ) {
             
         }
         if (!foundword) {
+            
             query = "you suck";
         }
         
